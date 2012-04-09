@@ -1,0 +1,13 @@
+This is a C# wrapper for the WKHTMLtoPDF project which can be found at: http://code.google.com/p/wkhtmltopdf/
+
+It can be used to easily create a PDF given HTML as an input.  I wrote this to work with 0.9.9 of wkhtmltopdf (seems to be the least buggy).  However I believe it works with all versions.
+
+There's a few gotchas for using this:
+
+1. Make sure that you pass the correct installation path to the HtmlToPdf method if you installed it anywhere other than the default location. You'll see that the class assumes the default if it wasn't passed
+2. Ensure that Read and Execute rights are granted to the wkhtmltopdf folder for the relevant process
+3. Ensure that Write rights are granted for the location you want to create your PDFs for the relevant process
+
+I wrote about using this in my blog in more detail if you are interested:
+
+http://icanmakethiswork.blogspot.co.uk/2012/04/making-pdfs-from-html-in-c-using.html
